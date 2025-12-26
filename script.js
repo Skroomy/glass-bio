@@ -96,3 +96,26 @@ function formatTime(seconds) {
   const sec = Math.floor(seconds % 60);
   return `${min}:${sec < 10 ? '0' : ''}${sec}`;
 }
+
+const sky = document.querySelector('.effects');
+
+function createStar() {
+  const star = document.createElement('div');
+  star.classList.add('star');
+  
+  
+  star.style.left = `${Math.random() * window.innerWidth}px`;
+  star.style.top = `${Math.random() * window.innerHeight}px`;
+  
+  const width = Math.random() * 100 + 50 + 'px';
+  star.style.width = width;
+
+  sky.appendChild(star);
+  
+  setTimeout(() => {
+    star.remove();
+  }, 6000); 
+}
+
+// Spawn a star every 100ms
+setInterval(createStar, 100);
