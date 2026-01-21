@@ -1,0 +1,359 @@
+* {
+    padding: 0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    color: rgb(205,205,205);
+}
+
+html {
+    background-color: rgba(5,5,5,1);
+    background-image:  linear-gradient(rgb(55,55,55) 1px, transparent 1px), linear-gradient(to right, rgb(55,55,55) 1px, rgb(5,5,5) 1px);
+    background-size: 75px 75px;
+}
+
+body {
+    background: radial-gradient(circle at 50% -15vw, rgba(255,255,255,0.15), rgb(5,5,5) 100vh);
+}
+
+.black {
+    color: #000;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10rem;
+    min-height: calc(90vh - 20rem);
+}
+
+.hero-container {
+    margin: 1rem;
+    max-width: 40rem;
+}
+
+#title {
+    background: linear-gradient(to bottom, #FFFFFF 75%, #5e5e5e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
+
+#title, #title > span {
+    font-weight: 700;
+    font-size: 3rem; 
+}
+
+.glow-text {
+    text-shadow: 0 0 20px rgba(255,255,255,0.8);
+    color: #fff
+}
+
+#description {
+    margin-bottom: 3rem;
+    color: rgb(235,235,235);
+}
+
+#stars {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+button {
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: rgba(235,235,235,1);
+    border: none;
+    border-radius: 10px;
+    padding: 0.6rem 1.2rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.25s ;
+}
+
+button:hover {
+    transform: scale(97%);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    cursor:pointer;
+}
+
+a {
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: rgba(235,235,235,1);
+    border: none;
+    border-radius: 10px;
+    padding: 0.6rem 1.2rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ;
+
+}
+
+a:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    background-color: rgba(255,255,255,1);;
+    cursor:pointer;
+}
+
+.card {
+    display: inline-block;
+    z-index: 2;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+    border: solid 1px rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+
+    padding: 25px;
+    text-align: center;
+
+    min-width: 25rem;
+    max-width: 80%;
+
+    transform: perspective(1000px) rotateY(-10deg) rotateX(5deg);
+}
+
+.circle-card {
+  width: 15vh;
+  height: 15vh;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+  
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+
+}
+
+.username {
+    text-shadow: 0 0 10px rgba(240, 180, 50, 0.8);
+    color: rgba(255, 205, 90, 1);;
+    font-size: 1.6rem;
+    font-weight: 700;
+    transition: all 0.2s ease-out;
+}
+
+.username:hover {
+    text-shadow: 0 0 25px rgba(240, 180, 50, 0.8);
+    transform: scale(110%);
+}
+
+
+
+svg {
+    display: block;
+    fill: #fff;
+    filter: drop-shadow(0 0 5px, rgba(0, 0, 0, 1));
+}
+
+.card > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0
+}
+
+.card-icon {
+    margin: 5px;
+}
+
+.socials {
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.5);
+    border: solid 1px rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0.4rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    transition: all 0.25s ;
+}
+
+.socials:hover {
+    filter: brightness(50%);
+    cursor:pointer;
+}
+
+hr {
+    border: none;
+    border-bottom: solid 2px rgba(25, 25, 25, 0.8);
+    margin: 0.6rem -1rem;
+}
+ 
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: rgba(15,15,15,1);
+    border: solid 2px rgba(25, 25, 25, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 2rem;
+    width: 22rem;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.feature > p {
+    text-align: left;
+    text-wrap: word;
+}
+
+.feature > h2 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    display: inline-block;
+}
+
+.feature-icon {
+    font-size: 1.4rem;
+    color: #fff;
+    display: inline-block;
+    margin: 0rem 0.4rem;
+}
+
+.feature:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    border: solid 2px rgba(40, 40, 40, 0.8);
+}
+
+.info-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info-box > div {
+    margin: 2rem;
+    
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: rgb(235, 235, 235);
+}
+
+
+.carousel-cont { 
+    width: 30rem;
+    border: solid 2px rgba(25, 25, 25, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 30rem;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+
+.carousel-button {
+    margin: 0.2rem;
+    padding: 0.2rem 1rem;
+    box-shadow: none;
+    background: transparent;
+    color: #fff;
+    font-size: 1.4rem
+}
+.carousel-button:hover {
+    box-shadow: none;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    margin-left: 1.6rem;
+}
+
+.faq {
+  max-width: 50rem;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: left;
+  color: rgb(235, 235, 235);
+  font-weight: 400;
+  box-shadow: none;
+}
+
+.faq-question:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transform: none;
+    box-shadow: none;
+}
+
+.faq-answer {
+  max-height: 0; /* Hidden by default */
+  overflow: hidden;
+  transition: max-height 0.3s ease-out; /* Smooth slide effect */
+}
+
+.faq-answer p {
+    text-align: left;
+  padding: 0 20px 20px 20px;
+  margin: 0;
+}
+
+/* Active State Styles */
+.faq-item.active .faq-answer {
+  max-height: 15rem; /* Large enough to fit content */
+}
+
+.faq-icon {
+    transition: all 0.3s;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg); /* Turns the + into an x */
+}
+
